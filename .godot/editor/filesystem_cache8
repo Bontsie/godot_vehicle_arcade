@@ -1,0 +1,11 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1723109641
+ArcadeCar.tscn::PackedScene::-1::1723109630::0::1::::<><>::res://suspension.gd<>res://ArcadeVehicle.gd<>res://Camera.gd
+ArcadeMotorcycle.tscn::PackedScene::-1::1723109630::0::1::::<><>::res://suspension.gd<>res://ArcadeVehicle.gd<>res://Camera.gd
+ArcadeVehicle.gd::GDScript::-1::1723109630::0::1::::<>RigidBody3D<>::
+Camera.gd::GDScript::-1::1723109630::0::1::::<>Camera3D<>::
+default_env.tres::Environment::-1::1723109630::0::1::::<><>::
+icon.png::CompressedTexture2D::2495416105399892522::1723109558::1723109642::1::::<><>::
+suspension.gd::GDScript::-1::1723109630::0::1::::<>RayCast3D<>::
+TestStage.gd::GDScript::-1::1723109630::0::1::::<>Node3D<>::
+TestStage.tscn::PackedScene::-1::1723109630::0::1::::<><>::res://ArcadeMotorcycle.tscn<>res://ArcadeCar.tscn<>res://TestStage.gd

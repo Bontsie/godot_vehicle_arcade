@@ -4,138 +4,138 @@
 [ext_resource path="res://ArcadeCar.tscn" type="PackedScene" id=2]
 [ext_resource path="res://TestStage.gd" type="Script" id=3]
 
-[sub_resource type="CubeMesh" id=1]
+[sub_resource type="BoxMesh" id=1]
 
-[sub_resource type="SpatialMaterial" id=2]
+[sub_resource type="StandardMaterial3D" id=2]
 albedo_color = Color( 0.0392157, 0.552941, 0.0745098, 1 )
 
-[sub_resource type="BoxShape" id=3]
+[sub_resource type="BoxShape3D" id=3]
 
 [sub_resource type="CylinderMesh" id=4]
 
-[sub_resource type="CylinderShape" id=5]
+[sub_resource type="CylinderShape3D" id=5]
 
-[sub_resource type="SpatialMaterial" id=6]
+[sub_resource type="StandardMaterial3D" id=6]
 albedo_color = Color( 0.564706, 0.027451, 0.368627, 1 )
 
-[sub_resource type="CubeMesh" id=7]
+[sub_resource type="BoxMesh" id=7]
 
-[sub_resource type="SpatialMaterial" id=8]
+[sub_resource type="StandardMaterial3D" id=8]
 albedo_color = Color( 0.027451, 0.0862745, 0.937255, 1 )
 
-[sub_resource type="BoxShape" id=9]
+[sub_resource type="BoxShape3D" id=9]
 
-[sub_resource type="SpatialMaterial" id=10]
+[sub_resource type="StandardMaterial3D" id=10]
 albedo_color = Color( 0.0117647, 0.00392157, 0.945098, 1 )
 
-[node name="TestStage" type="Spatial"]
+[node name="TestStage" type="Node3D"]
 script = ExtResource( 3 )
 
-[node name="StaticBody" type="StaticBody" parent="."]
-transform = Transform( 39.8606, 0, 0, 0, 0.00966501, 0, 0, 0, 41.8197, 0, 0, 0 )
+[node name="StaticBody3D" type="StaticBody3D" parent="."]
+transform = Transform3D( 39.8606, 0, 0, 0, 0.00966501, 0, 0, 0, 41.8197, 0, 0, 0 )
 
-[node name="MeshInstance" type="MeshInstance" parent="StaticBody"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D"]
 mesh = SubResource( 1 )
 material/0 = SubResource( 2 )
 
-[node name="CollisionShape" type="CollisionShape" parent="StaticBody"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D"]
 shape = SubResource( 3 )
 
-[node name="DirectionalLight" type="DirectionalLight" parent="."]
-transform = Transform( 1, 0, 0, 0, 0.553377, 0.832931, 0, -0.832931, 0.553377, 0, 8.38244, 0 )
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 0.553377, 0.832931, 0, -0.832931, 0.553377, 0, 8.38244, 0 )
 
-[node name="Obstacle" type="StaticBody" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.81986, 1.0909, -16.0851 )
+[node name="Obstacle" type="StaticBody3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -4.81986, 1.0909, -16.0851 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Obstacle"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Obstacle"]
 mesh = SubResource( 4 )
 material/0 = null
 
-[node name="CollisionShape" type="CollisionShape" parent="Obstacle"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle"]
 shape = SubResource( 5 )
 
-[node name="Obstacle2" type="StaticBody" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.94843, 1.0909, -16.0851 )
+[node name="Obstacle2" type="StaticBody3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.94843, 1.0909, -16.0851 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Obstacle2"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Obstacle2"]
 mesh = SubResource( 4 )
 material/0 = null
 
-[node name="CollisionShape" type="CollisionShape" parent="Obstacle2"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle2"]
 shape = SubResource( 5 )
 
-[node name="Obstacle3" type="StaticBody" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.94843, 1.0909, 15.1586 )
+[node name="Obstacle3" type="StaticBody3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.94843, 1.0909, 15.1586 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Obstacle3"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Obstacle3"]
 mesh = SubResource( 4 )
 material/0 = null
 
-[node name="CollisionShape" type="CollisionShape" parent="Obstacle3"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle3"]
 shape = SubResource( 5 )
 
-[node name="Obstacle4" type="StaticBody" parent="."]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.97579, 1.0909, 15.1586 )
+[node name="Obstacle4" type="StaticBody3D" parent="."]
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -1.97579, 1.0909, 15.1586 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Obstacle4"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Obstacle4"]
 mesh = SubResource( 4 )
 material/0 = null
 
-[node name="CollisionShape" type="CollisionShape" parent="Obstacle4"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle4"]
 shape = SubResource( 5 )
 
-[node name="Obstacle5" type="StaticBody" parent="."]
-transform = Transform( -4.11997e-07, -2.52882, 0, 1, -1.62921e-07, 0, 0, 0, 1, -1.976, -0.796128, 0.969 )
+[node name="Obstacle5" type="StaticBody3D" parent="."]
+transform = Transform3D( -4.11997e-07, -2.52882, 0, 1, -1.62921e-07, 0, 0, 0, 1, -1.976, -0.796128, 0.969 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Obstacle5"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Obstacle5"]
 mesh = SubResource( 4 )
 material/0 = SubResource( 6 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Obstacle5"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle5"]
 shape = SubResource( 5 )
 
-[node name="Obstacle6" type="StaticBody" parent="."]
-transform = Transform( -4.23832e-07, -2.60146, 0, 1, -1.62921e-07, 0, 0, 0, 1, -1.976, -0.796128, -2.28404 )
+[node name="Obstacle6" type="StaticBody3D" parent="."]
+transform = Transform3D( -4.23832e-07, -2.60146, 0, 1, -1.62921e-07, 0, 0, 0, 1, -1.976, -0.796128, -2.28404 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Obstacle6"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Obstacle6"]
 mesh = SubResource( 4 )
 material/0 = SubResource( 6 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Obstacle6"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle6"]
 shape = SubResource( 5 )
 
-[node name="Obstacle7" type="StaticBody" parent="."]
-transform = Transform( -4.30252e-07, -2.64087, 0, 1, -1.62921e-07, 0, 0, 0, 1, -1.976, -0.796128, -6.06924 )
+[node name="Obstacle7" type="StaticBody3D" parent="."]
+transform = Transform3D( -4.30252e-07, -2.64087, 0, 1, -1.62921e-07, 0, 0, 0, 1, -1.976, -0.796128, -6.06924 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Obstacle7"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Obstacle7"]
 mesh = SubResource( 4 )
 material/0 = SubResource( 6 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Obstacle7"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Obstacle7"]
 shape = SubResource( 5 )
 
-[node name="Ramp" type="StaticBody" parent="."]
-transform = Transform( 3.74523, 0, 0, 0, 0.939693, -0.34202, 0, 0.611306, 1.67955, 7.9464, -0.550684, 0 )
+[node name="Ramp" type="StaticBody3D" parent="."]
+transform = Transform3D( 3.74523, 0, 0, 0, 0.939693, -0.34202, 0, 0.611306, 1.67955, 7.9464, -0.550684, 0 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Ramp"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ramp"]
 mesh = SubResource( 7 )
 material/0 = SubResource( 8 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Ramp"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ramp"]
 shape = SubResource( 9 )
 
-[node name="Ramp2" type="StaticBody" parent="."]
-transform = Transform( 3.41095, 0, 0, 0, 0.939693, -0.34202, 0, 0.611306, 1.67955, 20.2052, -0.550684, 0 )
+[node name="Ramp2" type="StaticBody3D" parent="."]
+transform = Transform3D( 3.41095, 0, 0, 0, 0.939693, -0.34202, 0, 0.611306, 1.67955, 20.2052, -0.550684, 0 )
 
-[node name="MeshInstance" type="MeshInstance" parent="Ramp2"]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Ramp2"]
 mesh = SubResource( 7 )
 material/0 = SubResource( 10 )
 
-[node name="CollisionShape" type="CollisionShape" parent="Ramp2"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ramp2"]
 shape = SubResource( 9 )
 
 [node name="ArcadeMotorcycle" parent="." instance=ExtResource( 1 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.68549, 1.10241, 0 )
+transform = Transform3D( 1, 0, 0, 0, 1, 0, 0, 0, 1, -8.68549, 1.10241, 0 )
 
 [node name="ArcadeCar" parent="." instance=ExtResource( 2 )]
-transform = Transform( 0.195724, 0, -0.980659, 0, 1, 0, 0.980659, 0, 0.195724, 23.1355, 0.491769, 6.42976 )
+transform = Transform3D( 0.195724, 0, -0.980659, 0, 1, 0, 0.980659, 0, 0.195724, 23.1355, 0.491769, 6.42976 )

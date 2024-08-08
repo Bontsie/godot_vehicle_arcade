@@ -1,11 +1,11 @@
-extends Camera
+extends Camera3D
 
 const DISTANCE := 5
 const HEIGHT := 1
-onready var vehicle = get_parent()
+@onready var vehicle = get_parent()
 
 func _init():
-	set_as_toplevel(true)
+	set_as_top_level(true)
 
 func _process(delta):
 	if not vehicle.active:
